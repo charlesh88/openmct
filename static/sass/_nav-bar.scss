@@ -1,0 +1,4 @@
+#nav-bar {
+	@include background-image(linear-gradient(darken($colorKey, 10%), $colorKey 5%));
+	padding: 15px $contentSidePad;
+}

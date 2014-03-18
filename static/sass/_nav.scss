@@ -1,0 +1,14 @@
+ul.nav {
+	list-style-type: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	a {
+		text-decoration: none;
+	}
+	li {
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 20px;
+		padding: 0 !important;
+	}
+}

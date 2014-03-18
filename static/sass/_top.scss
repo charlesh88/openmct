@@ -1,0 +1,13 @@
+#top {
+	background: $colorSub;
+	font-size: 0.75em;
+	a {
+		color: #5d5d5d;
+		&:hover {
+			color: #000;
+		}
+	}
+	.content {
+		padding: 8px $contentSidePad;
+	}		
+}

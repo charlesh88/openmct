@@ -1,0 +1,25 @@
+@mixin trans-prop-nice-resize-h() {
+	@include transition-property(height, bottom, top);
+	@include transition-duration(0.4s);
+	@include transition-timing-function(ease-in-out);
+}
+
+@mixin triangle-right($size, $color) {
+	$size: $size/2;
+	$ratio: 1;
+	width: 0;
+	height: 0;
+	border-top: $size/$ratio solid transparent;
+	border-left: $size solid $color;
+	border-bottom: $size/$ratio solid transparent;
+}
+
+@mixin triangle-down($size, $color) {
+	$size: $size/2;
+	$ratio: 1;
+	width: 0;
+	height: 0;
+	border-left: $size/$ratio solid transparent;	
+	border-top: $size solid $color;
+	border-right: $size/$ratio solid transparent;
+}
