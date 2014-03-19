@@ -1,0 +1,12 @@
+a.logo {
+	display: block;
+	position: absolute;
+	&#logo-nasa {
+		background: url($spritesLg) no-repeat 0 0;
+		height: 90px; width: 100px;
+	}
+	&#logo-openmct {
+		background: url($spritesLg) no-repeat 0 -90px;
+		height: 45px; width: 162px;
+	}
+}

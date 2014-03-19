@@ -1,4 +1,41 @@
-#hero {
-	background: black;
-	min-height: 400px; // temp	
+.home .hero {
+	color: #ccc;
+	position: relative;
+	height: 480px;
+	.copy {
+//	line-height: 150%;
+		width: 300px;
+		p {
+			margin-bottom: 2em;
+		}
+	}
+	.outer {
+		height: 100%;
+		&#hero1 {
+			background: black url($imagesUrl + 'hero-juno-jupiter.jpg') no-repeat center top;
+			font-family: $fontKey;
+			
+			h1 {
+				color: $colorAccent2;
+				p {
+					margin: 0;
+					&.em {
+						color: white;
+						font-size: 1.5em;
+					}
+				}
+			}
+
+			.btn {
+				@include background-image(linear-gradient(lighten($colorKey, 5%), $colorKey 50%));
+				color: white;
+				&:hover {
+					@include background-image(linear-gradient(lighten($colorKey, 15%), lighten($colorKey, 5%) 50%));
+				}
+			}
+			.content {
+				padding-top: 90px;
+			}
+		}
+	}
 }

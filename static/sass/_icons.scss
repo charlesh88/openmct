@@ -1,0 +1,14 @@
+.triangle {
+	$myColor: lighten($colorKey, 20%);
+	$mySize: 10px;
+	&.lg {
+		$mySize: 15px;
+		margin-bottom: -1px;
+	}
+	@include triangle-right($mySize, $myColor);
+//	box-sizing: border-box;
+	display: inline-block;
+	&.triangle-down {
+		@include triangle-down($mySize, $myColor);
+	}
+}

@@ -1,6 +1,6 @@
 #top {
 	background: $colorSub;
-	font-size: 0.75em;
+	font-size: 0.7em;
 	a {
 		color: #5d5d5d;
 		&:hover {
@@ -8,6 +8,6 @@
 		}
 	}
 	.content {
-		padding: 8px $contentSidePad;
+		padding: 8px 0;
 	}		
 }

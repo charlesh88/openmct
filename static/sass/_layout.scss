@@ -1,0 +1,23 @@
+.columns {
+	height: 100%;
+	padding: 20px 0;
+	position: relative;
+	&.cols-3 {
+		.row {
+		}
+		.col {
+			border-left: 1px solid #ccc;
+			box-sizing: border-box;
+			display: block;
+			float: left;
+			margin-left: 12px;
+			padding: 10px;
+			width: 312px;
+			&:first-child {
+				border-left: none;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+}
