@@ -15,12 +15,17 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 	&:hover {
-		color: lighten($c, 0.2);
-	}	
+		color: lighten($c, 20%);
+	}
+	&.em {
+		font-family: $fontKey;
+		letter-spacing: -0.05em;
+		word-spacing: 0.2em;
+	}
 }
 
 body {
-  background-color: #fff;
+  background-color: $colorKey;
   color: #5e5e5e;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -36,20 +41,21 @@ input {
 
 h1, h2, h3, .nav {
 	font-family: $fontKey;
-	letter-spacing: -0.01em;
 	margin: 0;
 }
 
 h1 {
   font-size: 1.5em;
   font-weight: normal;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.07em;
+	word-spacing: 0.2em;
   margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.2em;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.07em;
+	word-spacing: 0.2em;
 }
 
 .centered {
@@ -58,15 +64,18 @@ h2 {
 
 .content {
 //	background: rgba(blue, 0.1);
-	@include clearfix;
 	box-sizing: border-box;
 	margin: 0 auto;
 	position: relative;
-	width: 960px;
+	width: $displayW;
 }
 
-.main {
+.main,
+.ankle {
 	background: white;
+	p {
+		font-size: 0.8em;
+	}
 }
 
 .ds {
@@ -79,4 +88,13 @@ h2 {
 
 .hide {
   display: none;
+}
+
+// Clearfix - include everything that directly contains floating elements
+.main,
+.content,
+.columns,
+.row,
+.col {
+	@include clearfix;
 }

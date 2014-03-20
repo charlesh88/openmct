@@ -1,5 +1,4 @@
 #nav-bar {
-	//@include background-image(linear-gradient(darken($colorKey, 10%), lighten($colorKey, 5%) 5%, $colorKey) 10%);
 	$c1: darken($colorKey, 5%); // "drop-shadow"
 	$c2: lighten($colorKey, 5%);
 	$c3: $colorKey;
@@ -7,7 +6,7 @@
 	$logo1W: 100px;
 	$logo2W: 162px;
 	
-	@include background-image(linear-gradient($c1, $c2 5%, $c3 70%));
+	@include background-image(linear-gradient($c1, $c2 5px, $c3 70%));
 	height: $h;
 	padding: 0;
 	position: relative;

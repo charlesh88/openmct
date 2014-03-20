@@ -1,23 +1,65 @@
 .columns {
+	$spaceV: 18px;
+	$spaceH: ($spaceV / $displayW);
 	height: 100%;
 	padding: 20px 0;
 	position: relative;
-	&.cols-3 {
-		.row {
+	
+	.row {
+		background: rgba(yellow, 0.3);
+		border-top: 1px solid $colorBorder;
+		margin-top: $spaceV;
+		padding-top: $spaceV;
+		&:first-child {
+			border-top: none;
+			margin-top: 0;
+			padding-top: 0;
 		}
-		.col {
-			border-left: 1px solid #ccc;
-			box-sizing: border-box;
-			display: block;
-			float: left;
-			margin-left: 12px;
-			padding: 10px;
-			width: 312px;
-			&:first-child {
-				border-left: none;
-				margin-left: 0;
-				padding-left: 0;
-			}
+	}
+
+	.col {
+		background: rgba(red, 0.3);
+		border-left: 1px solid $colorBorder;
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		margin-left: $spaceH;
+		padding-left: $spaceH;
+		&:first-child {
+			border-left: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+	
+	.cols-1 .col {
+		border-left: none;
+		float: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+	
+	.cols-2 .col {
+		width: 480px;
+		&:first-child {
+			width: 462px;
+		}
+	}
+	
+	.cols-3 .col {
+		$totalM: $spaceH * 2;
+		$totalC: 100 - $totalM;
+		$w: ($totalC + $spaceH) / 3; //32.8%; //314px;
+		width: percentage($w);
+		&:first-child {
+			width: percentage($w - $spaceH); //296px;
+		}
+	}
+	
+	.cols-4 .col {
+		width: 231px;
+		&:first-child {
+			width: 213px;
 		}
 	}
 }
