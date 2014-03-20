@@ -12,7 +12,8 @@
 	.outer {
 		height: 100%;
 		&#hero1 {
-			background: black url($imagesUrl + 'hero-juno-jupiter.jpg') no-repeat center top;
+			background: black url($imagesUrl + 'hero-juno-jupiter.jpg') no-repeat center center;
+			background-size: cover;
 			font-family: $fontKey;
 			
 			h1 {

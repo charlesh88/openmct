@@ -1,30 +1,72 @@
+$spaceVpx: 18px;
+$gutter: 3; // %
+
+@function perc($n) {
+  @return $n * 1%;
+}
+
+@function float($n, $decimals, $boolFloor) {
+	$y: 10 * $decimals;
+	$x: $n * $y;
+	@if ($boolFloor) {
+		$x: floor($x);
+	} @else {
+		$x: round($x);
+	}
+	$x: $x / $y;
+	@return $x;
+}
+
+@function colWidth($colN) {
+	$totalC: 100 - ($colN - 1) * $gutter;
+	$firstCw: $totalC / $colN;
+	$cw: $firstCw + $gutter / 2;
+//	@debug "colN: " + $colN + "; $firstCw: " + $firstCw + "; $cw: " + $cw;
+	@return $cw;
+}
+
+@mixin col($colN) {
+	$w: colWidth($colN);
+	$wPerc: perc($w);
+	width: $wPerc;
+//	@debug "w%: " + $wPerc;
+	&:first-child {
+		width: perc($w - $gutter / 2);
+//		@debug "first col w%: " + perc($w - $gutter / 2);
+	}
+}
+
 .columns {
-	$spaceV: 18px;
-	$spaceH: ($spaceV / $displayW);
 	height: 100%;
 	padding: 20px 0;
 	position: relative;
+	.columns {
+		padding: 0; // Don't pad when columns is nested
+	}
 	
 	.row {
-		background: rgba(yellow, 0.3);
+//		background: rgba(yellow, 0.1);
 		border-top: 1px solid $colorBorder;
-		margin-top: $spaceV;
-		padding-top: $spaceV;
+		margin-top: $spaceVpx;
+		padding-top: $spaceVpx;
 		&:first-child {
 			border-top: none;
 			margin-top: 0;
 			padding-top: 0;
 		}
+		&.no-h-border .col {
+			border: none;
+		}
 	}
 
 	.col {
-		background: rgba(red, 0.3);
+//		background: rgba(red, 0.1);
 		border-left: 1px solid $colorBorder;
 		box-sizing: border-box;
 		display: block;
 		float: left;
-		margin-left: $spaceH;
-		padding-left: $spaceH;
+		margin-left: perc($gutter / 2);
+		padding-left: perc($gutter / 2);
 		&:first-child {
 			border-left: none;
 			margin-left: 0;
@@ -32,34 +74,29 @@
 		}
 	}
 	
-	.cols-1 .col {
+	.cols-1 > .col {
 		border-left: none;
 		float: none;
 		margin-left: 0;
 		padding-left: 0;
 	}
 	
-	.cols-2 .col {
-		width: 480px;
-		&:first-child {
-			width: 462px;
-		}
+	.cols-2 > .col {
+		@include col(2);
 	}
 	
-	.cols-3 .col {
-		$totalM: $spaceH * 2;
-		$totalC: 100 - $totalM;
-		$w: ($totalC + $spaceH) / 3; //32.8%; //314px;
-		width: percentage($w);
-		&:first-child {
-			width: percentage($w - $spaceH); //296px;
-		}
+	.cols-3 > .col {
+		@include col(3);
 	}
 	
-	.cols-4 .col {
-		width: 231px;
+	.cols-4 > .col {
+		@include col(4);
+	}
+	
+	.cols-1-3 > .col {
+		width: 69.25%;
 		&:first-child {
-			width: 213px;
+			width: 29.25%;
 		}
 	}
 }

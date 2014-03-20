@@ -56,51 +56,56 @@ h1 {
 h2 {
   font-size: 1.2em;
   letter-spacing: -0.07em;
+  margin-bottom: 10px;
   word-spacing: 0.2em;
 }
 
-/* line 61, ../sass/_global.scss */
+/* line 62, ../sass/_global.scss */
+p {
+  margin: 0 0 1em 0;
+}
+
+/* line 67, ../sass/_global.scss */
 .centered {
   text-align: center;
 }
 
-/* line 65, ../sass/_global.scss */
+/* line 71, ../sass/_global.scss */
 .content {
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
   width: 960px;
 }
+/* line 77, ../sass/_global.scss */
+.content p {
+  font-size: 0.8em;
+}
 
-/* line 74, ../sass/_global.scss */
+/* line 83, ../sass/_global.scss */
 .main,
 .ankle {
   background: white;
 }
-/* line 76, ../sass/_global.scss */
-.main p,
-.ankle p {
-  font-size: 0.8em;
-}
 
-/* line 81, ../sass/_global.scss */
+/* line 87, ../sass/_global.scss */
 .ds {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
 }
 
-/* line 85, ../sass/_global.scss */
+/* line 91, ../sass/_global.scss */
 .ts {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
 }
 
-/* line 89, ../sass/_global.scss */
+/* line 95, ../sass/_global.scss */
 .hide {
   display: none;
 }
 
-/* line 98, ../sass/_global.scss */
+/* line 104, ../sass/_global.scss */
 .main,
 .content,
 .columns,
@@ -110,87 +115,112 @@ h2 {
   *zoom: 1;
 }
 
-/* line 1, ../sass/_layout.scss */
+/* line 109, ../sass/_global.scss */
+.nav-bar a,
+.footer a {
+  color: #91ccfa;
+}
+/* line 111, ../sass/_global.scss */
+.nav-bar a:hover,
+.footer a:hover {
+  color: white;
+}
+
+/* line 39, ../sass/_layout.scss */
 .columns {
   height: 100%;
   padding: 20px 0;
   position: relative;
 }
-/* line 8, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
+.columns .columns {
+  padding: 0;
+}
+/* line 47, ../sass/_layout.scss */
 .columns .row {
-  background: rgba(255, 255, 0, 0.3);
   border-top: 1px solid #dddddd;
   margin-top: 18px;
   padding-top: 18px;
 }
-/* line 13, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .columns .row:first-child {
   border-top: none;
   margin-top: 0;
   padding-top: 0;
 }
-/* line 20, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
+.columns .row.no-h-border .col {
+  border: none;
+}
+/* line 62, ../sass/_layout.scss */
 .columns .col {
-  background: rgba(255, 0, 0, 0.3);
   border-left: 1px solid #dddddd;
   box-sizing: border-box;
   display: block;
   float: left;
-  margin-left: 0.01875;
-  padding-left: 0.01875;
+  margin-left: 1.5%;
+  padding-left: 1.5%;
 }
-/* line 28, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 .columns .col:first-child {
   border-left: none;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 35, ../sass/_layout.scss */
-.columns .cols-1 .col {
+/* line 77, ../sass/_layout.scss */
+.columns .cols-1 > .col {
   border-left: none;
   float: none;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 42, ../sass/_layout.scss */
-.columns .cols-2 .col {
-  width: 480px;
+/* line 84, ../sass/_layout.scss */
+.columns .cols-2 > .col {
+  width: 50%;
 }
-/* line 44, ../sass/_layout.scss */
-.columns .cols-2 .col:first-child {
-  width: 462px;
+/* line 33, ../sass/_layout.scss */
+.columns .cols-2 > .col:first-child {
+  width: 48.5%;
 }
-/* line 49, ../sass/_layout.scss */
-.columns .cols-3 .col {
-  width: 3332.70833%;
+/* line 88, ../sass/_layout.scss */
+.columns .cols-3 > .col {
+  width: 32.83333%;
 }
-/* line 54, ../sass/_layout.scss */
-.columns .cols-3 .col:first-child {
-  width: 3330.83333%;
+/* line 33, ../sass/_layout.scss */
+.columns .cols-3 > .col:first-child {
+  width: 31.33333%;
 }
-/* line 59, ../sass/_layout.scss */
-.columns .cols-4 .col {
-  width: 231px;
+/* line 92, ../sass/_layout.scss */
+.columns .cols-4 > .col {
+  width: 24.25%;
 }
-/* line 61, ../sass/_layout.scss */
-.columns .cols-4 .col:first-child {
-  width: 213px;
+/* line 33, ../sass/_layout.scss */
+.columns .cols-4 > .col:first-child {
+  width: 22.75%;
+}
+/* line 96, ../sass/_layout.scss */
+.columns .cols-1-3 > .col {
+  width: 69.25%;
+}
+/* line 98, ../sass/_layout.scss */
+.columns .cols-1-3 > .col:first-child {
+  width: 29.25%;
 }
 
 /* line 1, ../sass/_logos.scss */
 a.logo {
   display: block;
-  position: absolute;
 }
-/* line 4, ../sass/_logos.scss */
-a.logo#logo-nasa {
-  background: url("../images/openmct-sprites-lg.png") no-repeat 0 0;
+/* line 3, ../sass/_logos.scss */
+a.logo.logo-nasa {
+  background: url("../images/logo-nasa.png") no-repeat 0 0;
+  background-size: contain;
   height: 90px;
   width: 100px;
 }
 /* line 8, ../sass/_logos.scss */
-a.logo#logo-openmct {
-  background: url("../images/openmct-sprites-lg.png") no-repeat 0 -90px;
+a.logo.logo-openmct {
+  background: url("../images/openmct-sprites-lg.png") no-repeat 0 0px;
   height: 45px;
   width: 162px;
 }
@@ -266,25 +296,25 @@ ul.nav li {
 }
 
 /* line 1, ../sass/_top.scss */
-#top {
+.top {
   background: #f0f0f0;
   font-size: 0.7em;
 }
 /* line 4, ../sass/_top.scss */
-#top a {
+.top a {
   color: #5d5d5d;
 }
 /* line 6, ../sass/_top.scss */
-#top a:hover {
+.top a:hover {
   color: #000;
 }
 /* line 10, ../sass/_top.scss */
-#top .content {
+.top .content {
   padding: 8px 0;
 }
 
 /* line 1, ../sass/_nav-bar.scss */
-#nav-bar {
+.nav-bar {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #085d9e), color-stop(5px, #0a79ce), color-stop(70%, #096bb6));
   background-image: -webkit-linear-gradient(#085d9e, #0a79ce 5px, #096bb6 70%);
   background-image: -moz-linear-gradient(#085d9e, #0a79ce 5px, #096bb6 70%);
@@ -295,25 +325,29 @@ ul.nav li {
   position: relative;
 }
 /* line 13, ../sass/_nav-bar.scss */
-#nav-bar .content {
+.nav-bar .content {
   height: 90px;
 }
 /* line 19, ../sass/_nav-bar.scss */
-#nav-bar a.logo#logo-nasa {
+.nav-bar a.logo {
+  position: absolute;
+}
+/* line 22, ../sass/_nav-bar.scss */
+.nav-bar a.logo.logo-nasa {
   top: 0;
   right: auto;
   bottom: auto;
   left: 0;
 }
-/* line 23, ../sass/_nav-bar.scss */
-#nav-bar a.logo#logo-openmct {
+/* line 26, ../sass/_nav-bar.scss */
+.nav-bar a.logo.logo-openmct {
   top: 22px;
   right: auto;
   bottom: auto;
   left: 100px;
 }
-/* line 28, ../sass/_nav-bar.scss */
-#nav-bar ul.nav {
+/* line 32, ../sass/_nav-bar.scss */
+.nav-bar ul.nav {
   position: absolute;
   top: 32px;
   right: 100px;
@@ -322,24 +356,19 @@ ul.nav li {
   height: 24px;
   width: auto;
 }
-/* line 33, ../sass/_nav-bar.scss */
-#nav-bar ul.nav li {
+/* line 37, ../sass/_nav-bar.scss */
+.nav-bar ul.nav li {
   border-left: 1px solid #043255;
   line-height: 24px;
   margin: 0;
   padding: 0;
 }
-/* line 38, ../sass/_nav-bar.scss */
-#nav-bar ul.nav li a {
+/* line 42, ../sass/_nav-bar.scss */
+.nav-bar ul.nav li a {
   border-left: 1px solid #30a0f5;
-  color: #91ccfa;
   display: block;
   font-size: 0.8em;
   padding: 0 10px;
-}
-/* line 44, ../sass/_nav-bar.scss */
-#nav-bar ul.nav li a:hover {
-  color: white;
 }
 
 /* line 1, ../sass/_hero.scss */
@@ -362,23 +391,24 @@ ul.nav li {
 }
 /* line 14, ../sass/_hero.scss */
 .home .hero .outer#hero1 {
-  background: black url("../images/hero-juno-jupiter.jpg") no-repeat center top;
+  background: black url("../images/hero-juno-jupiter.jpg") no-repeat center center;
+  background-size: cover;
   font-family: "armataregular", Helvetica, Arial, sans-serif;
 }
-/* line 18, ../sass/_hero.scss */
+/* line 19, ../sass/_hero.scss */
 .home .hero .outer#hero1 h1 {
   color: #ce9269;
 }
-/* line 20, ../sass/_hero.scss */
+/* line 21, ../sass/_hero.scss */
 .home .hero .outer#hero1 h1 p {
   margin: 0;
 }
-/* line 22, ../sass/_hero.scss */
+/* line 23, ../sass/_hero.scss */
 .home .hero .outer#hero1 h1 p.em {
   color: white;
   font-size: 1.5em;
 }
-/* line 29, ../sass/_hero.scss */
+/* line 30, ../sass/_hero.scss */
 .home .hero .outer#hero1 .btn {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0a79ce), color-stop(50%, #096bb6));
   background-image: -webkit-linear-gradient(#0a79ce, #096bb6 50%);
@@ -387,7 +417,7 @@ ul.nav li {
   background-image: linear-gradient(#0a79ce, #096bb6 50%);
   color: white;
 }
-/* line 32, ../sass/_hero.scss */
+/* line 33, ../sass/_hero.scss */
 .home .hero .outer#hero1 .btn:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1894f4), color-stop(50%, #0a79ce));
   background-image: -webkit-linear-gradient(#1894f4, #0a79ce 50%);
@@ -395,7 +425,7 @@ ul.nav li {
   background-image: -o-linear-gradient(#1894f4, #0a79ce 50%);
   background-image: linear-gradient(#1894f4, #0a79ce 50%);
 }
-/* line 36, ../sass/_hero.scss */
+/* line 37, ../sass/_hero.scss */
 .home .hero .outer#hero1 .content {
   padding-top: 90px;
 }
@@ -407,4 +437,19 @@ ul.nav li {
   background-image: -moz-linear-gradient(#d3d3d3, #ededed 5px);
   background-image: -o-linear-gradient(#d3d3d3, #ededed 5px);
   background-image: linear-gradient(#d3d3d3, #ededed 5px);
+}
+/* line 6, ../sass/_ankle.scss */
+.ankle .col {
+  border-color: #c4c4c4;
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer {
+  color: #ccc;
+  font-family: "armataregular", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+/* line 5, ../sass/_footer.scss */
+.footer a.logo.logo-nasa {
+  width: 100%;
 }

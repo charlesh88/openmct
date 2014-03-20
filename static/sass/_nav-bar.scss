@@ -1,4 +1,4 @@
-#nav-bar {
+.nav-bar {
 	$c1: darken($colorKey, 5%); // "drop-shadow"
 	$c2: lighten($colorKey, 5%);
 	$c3: $colorKey;
@@ -16,13 +16,17 @@
 		
 	}
 	
-	a.logo#logo-nasa {
-		// 100 x 90
-		top: 0; right: auto; bottom: auto; left: 0;
-	}
-	a.logo#logo-openmct {	
-		// 162 x 45
-		top: 22px; right: auto; bottom: auto; left: $logo1W;
+	a.logo {
+		position: absolute;
+
+		&.logo-nasa {
+			// 100 x 90
+			top: 0; right: auto; bottom: auto; left: 0;
+		}
+		&.logo-openmct {	
+			// 162 x 45
+			top: 22px; right: auto; bottom: auto; left: $logo1W;
+		}
 	}
 	
 	ul.nav {
@@ -37,13 +41,9 @@
 			padding: 0;
 			a {
 				border-left: 1px solid  lighten($colorKey, 20%);
-				color: lighten($colorKey, 40%);
 				display: block;
 				font-size: 0.8em;
 				padding: 0 10px;
-				&:hover {
-					color: white;
-				}
 			}
 		}
 		

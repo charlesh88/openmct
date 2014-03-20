@@ -55,7 +55,13 @@ h1 {
 h2 {
   font-size: 1.2em;
 	letter-spacing: -0.07em;
+  margin-bottom: 10px;
 	word-spacing: 0.2em;
+}
+
+p {
+//	font-size: 0.8em;
+	margin: 0 0 1em 0;
 }
 
 .centered {
@@ -68,14 +74,14 @@ h2 {
 	margin: 0 auto;
 	position: relative;
 	width: $displayW;
+	p {
+		font-size: 0.8em;
+	}
 }
 
 .main,
 .ankle {
 	background: white;
-	p {
-		font-size: 0.8em;
-	}
 }
 
 .ds {
@@ -97,4 +103,12 @@ h2 {
 .row,
 .col {
 	@include clearfix;
+}
+
+.nav-bar a,
+.footer a {
+	color: lighten($colorKey, 40%);
+	&:hover {
+		color: white;
+	}
 }
