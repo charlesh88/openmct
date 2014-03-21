@@ -5,38 +5,19 @@
 	<link rel='stylesheet' href='static/css/main.css'>
 	<script src='static/js/modernizr-2.6.2-respond-1.1.0.min.js'></script>
 	<script src='static/js/jquery-1.11.0.min.js'></script>
+	<script src='static/js/main.js'></script>
 	<script>
-//		$(function() {
-//      init();
-//		});
+		$(function() {
+      loadHtml('#top','static/fragments/top.html');
+      loadHtml('#main-nav','static/fragments/nav.main.html');
+      loadHtml('#ankle','static/fragments/ankle.html');
+      loadHtml('#footer','static/fragments/footer.html');
+		});
 	</script>
 </head>
 <body class='home'>
-	<div class='top'>
-		<div class='content'>
-			<ul class='nav'>
-				<li><a href=''>Events &amp; Missions</a></li>
-				<li><a href=''>Blog</a></li>
-				<li><a href=''>Webinars</a></li>
-				<li><a href=''>Support</a></li>
-				<li><a href=''>About Us</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class='nav-bar'>
-		<div class='content'>
-			<a href='' class='logo logo-nasa'></a>
-			<a href='/' class='logo logo-openmct'></a>
-			<ul class='nav'>
-				<li><a href=''>What It Is</a></li>
-				<li><a href=''>What It Does</a></li>
-				<li><a href=''>Open Source</a></li>
-				<li><a href=''>Downloads</a></li>
-				<li><a href=''>Documentation</a></li>
-			</ul>
-		</div>
-	</div>
+	<div id='top' class='top'></div>
+	<div id="main-nav" class='nav-bar'></div>
 
 	<div class='hero'>
 		<div id='hero1' class='outer'>
@@ -137,84 +118,8 @@
 		</div>
 	</div>
 	
-	<div class='ankle columns'>
-		<div class='content'>
-			<div class='row cols-3'>
-				
-				<div class='col'>
-					<h2>Blog</h2>
-					<div class='columns'>
-						<div class='row cols-1-3 no-h-border'>
-							<div class='col'>
-								<p>A</p>
-							</div>	
-							<div class='col'>
-								<p>B</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class='col'>
-					<h2>Events &amp; Missions</h2>
-					<div class='columns'>
-						<div class='row cols-1-3 no-h-border'>
-							<div class='col'>
-								<p>A</p>
-							</div>	
-							<div class='col'>
-								<p>B</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class='col'>
-					<h2>Github Issues</h2>
-					<div class='columns'>
-						<div class='row cols-1-3 no-h-border'>
-							<div class='col'>
-								<p>A</p>
-							</div>	
-							<div class='col'>
-								<p>B</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
-	<div class='footer columns'>
-		<div class='content'>
-			<div class='row cols-3 no-h-border'>
-				<div class='col'>					
-					<div class='columns'>
-						<div class='row cols-1-3 no-h-border'>
-							<div class='col'>
-								<a href='' class='logo logo-nasa'></a>
-							</div>	
-							<div class='col'>
-								<p>
-									NASA Official: Jay Trimble<br />
-									Curator: Charles Hacskaylo
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='col'>
-					<p>
-						<a href='' class='em'>Privacy Policy and Important Notices</a><br />
-						<a href='' class='em'>Terms of Use</a><br />
-						<a href='' class='em'>USA.gov</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id='ankle' class='ankle columns'></div>
+	<div id='footer' class='footer columns'></div>
 	
 	
 </body>
