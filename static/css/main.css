@@ -78,34 +78,52 @@ p {
   width: 960px;
 }
 /* line 77, ../sass/_global.scss */
-.content p {
+.content ul {
+  padding-left: 0;
+}
+/* line 79, ../sass/_global.scss */
+.content ul li {
+  list-style: none;
+}
+/* line 82, ../sass/_global.scss */
+.content ul.bullets {
+  padding-left: 16px;
+}
+/* line 84, ../sass/_global.scss */
+.content ul.bullets li {
+  list-style: square;
+}
+
+/* line 92, ../sass/_global.scss */
+.content p,
+.main .content li {
   font-size: 0.8em;
 }
 
-/* line 83, ../sass/_global.scss */
+/* line 97, ../sass/_global.scss */
 .main,
 .ankle {
   background: white;
 }
 
-/* line 87, ../sass/_global.scss */
+/* line 101, ../sass/_global.scss */
 .ds {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 2px 5px 2px;
 }
 
-/* line 91, ../sass/_global.scss */
+/* line 105, ../sass/_global.scss */
 .ts {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
 }
 
-/* line 95, ../sass/_global.scss */
+/* line 109, ../sass/_global.scss */
 .hide {
   display: none;
 }
 
-/* line 104, ../sass/_global.scss */
+/* line 118, ../sass/_global.scss */
 .main,
 .content,
 .columns,
@@ -115,12 +133,12 @@ p {
   *zoom: 1;
 }
 
-/* line 109, ../sass/_global.scss */
+/* line 123, ../sass/_global.scss */
 .nav-bar a,
 .footer a {
   color: #91ccfa;
 }
-/* line 111, ../sass/_global.scss */
+/* line 125, ../sass/_global.scss */
 .nav-bar a:hover,
 .footer a:hover {
   color: white;
@@ -470,7 +488,7 @@ ul.nav li {
 /* line 18, ../sass/_feature-boxes.scss */
 .feature-box #feature-box-1 .img {
   top: 115px;
-  background-position: 0 -365px;
+  background-position: 30px -365px;
 }
 /* line 23, ../sass/_feature-boxes.scss */
 .feature-box #feature-box-2 .img {
@@ -480,7 +498,7 @@ ul.nav li {
 /* line 28, ../sass/_feature-boxes.scss */
 .feature-box #feature-box-3 .img {
   top: 120px;
-  background-position: 50px -510px;
+  background-position: 30px -510px;
 }
 /* line 33, ../sass/_feature-boxes.scss */
 .feature-box #feature-box-4 .img {
@@ -498,7 +516,11 @@ ul.nav li {
 .feature-box #feature-box-6 .img {
   top: 165px;
   left: 195px;
-  background-position: -200px -45px;
+  background-position: -185px -45px;
+}
+/* line 48, ../sass/_feature-boxes.scss */
+.feature-box li {
+  font-family: "armataregular", Helvetica, Arial, sans-serif;
 }
 
 /* line 1, ../sass/_ankle.scss */
@@ -508,10 +530,20 @@ ul.nav li {
   background-image: -moz-linear-gradient(#d3d3d3, #ededed 5px);
   background-image: -o-linear-gradient(#d3d3d3, #ededed 5px);
   background-image: linear-gradient(#d3d3d3, #ededed 5px);
+  font-family: "armataregular", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
 }
-/* line 6, ../sass/_ankle.scss */
+/* line 8, ../sass/_ankle.scss */
 .ankle .col {
   border-color: #c4c4c4;
+}
+/* line 12, ../sass/_ankle.scss */
+.ankle table.list td {
+  vertical-align: top;
+}
+/* line 15, ../sass/_ankle.scss */
+.ankle table.list td.date {
+  padding-right: 10px;
 }
 
 /* line 1, ../sass/_footer.scss */

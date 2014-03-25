@@ -17,7 +17,7 @@
 
 	#feature-box-1 .img {
 		top: 115px;
-		background-position: 0 -365px; // Laptop
+		background-position: 30px -365px; // Laptop
 	}
 	
 	#feature-box-2 .img {
@@ -27,7 +27,7 @@
 	
 	#feature-box-3 .img {
 		top: 120px;
-		background-position: 50px -510px; // Lego
+		background-position: 30px -510px; // Lego
 	}
 	
 	#feature-box-4 .img {
@@ -42,6 +42,10 @@
 	
 	#feature-box-6 .img {
 		top: 165px; left: 195px;
-		background-position: -200px -45px; // Rover
+		background-position: -185px -45px; // Rover
+	}
+	
+	li {
+		font-family: $fontKey;	
 	}
 }

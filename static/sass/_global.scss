@@ -74,9 +74,23 @@ p {
 	margin: 0 auto;
 	position: relative;
 	width: $displayW;
-	p {
-		font-size: 0.8em;
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+		}
+		&.bullets {
+			padding-left: 16px;
+			li {
+				list-style: square;
+			}
+		}
 	}
+}
+
+.content p,
+.main .content li {
+	font-size: 0.8em;
 }
 
 .main,

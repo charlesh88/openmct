@@ -3,7 +3,18 @@
 	$c1: darken($c, 10%); // "drop-shadow"
 	$c2: $c;	
 	@include background-image(linear-gradient($c1, $c2 5px));
+	font-family: $fontKey;
+	font-size: 0.75rem;
 	.col {
 		border-color: darken($colorBorder, 10%);
+	}
+	
+	table.list td {
+//		background: rgba(yellow, 0.3);
+		vertical-align: top;
+		&.date {
+			padding-right: 10px;
+//			width: 33%;
+		}
 	}
 }
