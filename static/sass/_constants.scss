@@ -6,6 +6,8 @@ $colorAccent2: #ce9269; // hero h1
 $colorBorder: #ddd;
 $contentSidePad: 10px;
 $displayW: 960px;
+$columnGutterPerc: 3; //%
+$columnGutterPx: ($displayW * (($columnGutterPerc / 2) * .01));
 
 $fontKey: 'armataregular', Helvetica, Arial, sans-serif;
 $imagesUrl: '../images/';
