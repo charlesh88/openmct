@@ -1,0 +1,14 @@
+/* CSS Document - Last updated June 19, 2005 by Bryan Stephenson */
+
+/* handheld styles - Unfortunately, Microsoft decided that its handheld browsers should read the "screen" stylesheet as well as the "handheld" stylesheet. This means we must REMOVE all of the styles that get imported from the "screen" stylesheet. Because of this, this file is much larger than it needs to be. */
+
+body { font-family:Arial, Helvetica, sans-serif; font-size:1em; background:#fff;}
+h1, h2, h3, h4, h5, h6 { font-size:1.2em;}
+table, tbody, tr, td, th {display: block;}
+div { display:block; text-align:left;}
+img	{max-width:100%;}
+.textonly { display:none;}
+.imagesandtext { display:none;}
+a:link, a:visited {	color:#006699; text-decoration:underline;}
+a:hover { text-decoration:underline;}
+.hidden { height: 0; width: 0; overflow: hidden; position:relative;}

@@ -1,0 +1,1222 @@
+/* CSS Document - Last updated July 21, 2005 by Bryan Stephenson */
+
+/* Common Screen styles */
+
+/* If you want to make changes, please place your changes at the bottom of this stylesheet. There is a companion style sheet for this one to fix all of IE's bugs. I separated them to help reduce any problems we may see when IE released their new browser. */
+
+/* Fix a bug in Mozilla when the user resizes window */
+html {
+	min-width:750px;
+}
+/* END MOZILLA FIX */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:130%;
+	color:#000;
+	background:#000;
+	margin:0;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+div {
+	text-align:left;
+}
+
+ol, ul {
+	padding-left:5px;
+	margin:5px 15px 15px 30px;
+	list-style-position:outside;
+	text-align:left;
+}
+
+li {
+	padding-bottom:0px;
+}
+
+dl {
+	padding-left:5px;
+	margin-top:5px;
+	margin-left:30px;
+	list-style-type:none;
+	text-align:left;
+}
+
+a {
+	color:#114165;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#114165;
+	text-decoration:underline;
+}
+
+p {
+	margin-top:0;
+	margin-bottom:15px;
+}
+
+input {
+	border:1px solid #999999;
+	margin:3px 0px;
+	font-family:Arial,Helvetica,san-serif;
+	font-size:11px;
+	line-height:15px;
+}
+
+textarea {
+	border:1px solid #999999;
+	margin:3px 0px;
+	font-family:Arial,Helvetica,san-serif;
+	font-size:11px;
+	line-height:15px;
+}
+
+img {
+	border:0;
+	display:block;
+}
+
+table, tbody, tr, td, th {
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:top;
+}
+
+table.datatab {
+	border: 1px solid #666666;
+	margin-bottom:15px;
+	font-size:12px;
+}
+
+table.datatab thead tr td {
+	background:#99CCFF;
+	color:#000;
+	font-weight:bold;
+	padding: 3px 8px;
+	border-left: 1px solid #fff;
+}
+
+table.datatab tbody tr td {
+	font-size: 12px;
+	padding: 3px 8px;
+	border-left: 1px solid #D9D9D9;
+}
+
+table.datatab tbody tr.odd td {
+	background-color:#edf3fe;
+}
+
+h1 {
+	font-size:20px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+h2 {
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+h9 {
+	font-size:10px;
+	line-height:12px;
+	text-transform:uppercase;
+}
+
+h3, h4, h5, h6, h7, h8 {
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+pre.code {
+	background-color: #F7F7F7;
+	border: 1px solid #D7D7D7;
+	margin: 5px 0px 5px 5px;
+	padding: 5px;
+}
+
+code {
+	background-color: #F7F7F7;
+	border: 1px solid #D7D7D7;
+	margin: 5px;
+	padding: 5px;
+	display:block;
+}
+
+code.equation {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.txonly {
+	display: none;
+}
+
+.textonly {
+	display:inline;
+}
+
+.imagesandtext {
+	display:none;
+}
+
+.hide {
+	display: none;
+}
+
+.hidden {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	position: absolute;
+	/* for the benefit of IE5 Mac */
+}
+
+.inline {
+	display:inline;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+a:hover.linky {
+	text-decoration:underline;
+}
+
+.nolinky {
+	padding-left:0px;
+	background:inherit;
+	font-size:12px;
+	line-height:14px;
+}
+
+a:hover.nolinky {
+	border-bottom:0px;
+	text-decoration:underline;
+}
+
+.nolinky a:over
+
+a:hover.offsite {
+	border-bottom:1px solid #006699;
+	text-decoration:none;
+}
+
+div.clear {
+	clear:both;
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+div.clearleft {
+	clear:left;
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+div#paper {
+	background:#fff;
+	position:relative;
+	margin:10px auto;
+	padding:10px;
+	width:730px;
+}
+
+/* NASA Header */
+
+#nasahead {
+	position:relative;
+	background:#ccc;
+	width:730px;
+	height:65px;
+	margin:0;
+	padding:0;
+}
+
+#nasahead img {
+	padding:0;
+	vertical-align:middle;
+	display:inline;
+}
+
+#nasaheadlinks {
+	position:absolute;
+	height:45px;
+	left:380px;
+	top:0;
+	color:#666;
+	font-size:11px;
+	padding:0 0 0 20px;
+	margin:0;
+	margin-top:9px;
+	border-left:1px solid #666;
+}
+
+#nasaheadlinks ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#nasaheadlinks ul li {
+	padding-bottom:0;
+}
+
+#nasaheadlinks ul li a:link, #nasaheadlinks ul li a:visited {
+	text-decoration:none;
+	font-weight:normal;
+	color:#333;
+	font-size:11px;
+}
+
+#nasaheadlinks ul li a:hover {
+	text-decoration:underline;
+}
+
+#nasaheadlinks ul li#homeone { display:none;}
+
+#nasahead #searchbox {
+	position:absolute;
+	top:0;
+	right:0px;
+	height:65px;
+	width:178px;
+	background:#006699;
+}
+
+#nasahead form {
+	margin:0;
+	padding:0;
+}
+
+#nasahead #searchbox h3 {
+	margin:8px 0 2px 20px;
+	color:#fff;
+}
+
+#nasahead input {
+	margin:0 0 0 20px;
+}
+
+#nasahead input.submitit {
+	margin:0 0 0 8px;
+	vertical-align:text-bottom;
+	width:38px;
+	height:20px;
+}
+
+/* END NASA HEADER */
+
+/* Main Nav */
+#menu {
+	border:0;
+	margin:0;
+	padding:0;
+	height:25px;
+	width:730px;
+	color:#fff;
+	background:#666;
+}
+
+#menu ul {
+	border:0;
+	margin:0;
+	padding:0;
+	height:25px;
+	width:730px;
+	list-style-type:none;
+	text-align:center;
+	clear:left;
+	color:#fff;
+}
+
+#menu ul li {
+	display:block;
+	float:left;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+#menu ul li a {
+	text-decoration:none;
+	color:#fff;
+	width:181px;
+	height:23px;
+	border-top:2px solid #525252;
+	border-right:1px solid #fff;
+	padding:0;
+	display:block;
+	text-align:center;
+	line-height:23px;
+	font:12px/23px Arial, Helvetica, sans-serif;
+	letter-spacing:-.0px;
+}
+
+#menu ul li a:hover {
+	height:23px;
+	color:#fff;
+	border-top:2px solid #005985;
+	background:#006699;
+}
+
+/* header menu items, fixed width so these shouldnt sum > 728 */
+#menu ul li#two a { width:144px;}
+#menu ul li#three a { width:144px;}
+#menu ul li#four a { width:144px;}
+#menu ul li#five a { width:144px;}
+#menu ul li#six a { width:150px; border-right:none;}
+
+
+/* #menu ul li#seven a { border-right:0; width:125px;}  */
+
+/* BODY SWITCHER for ON states for each button. To turn a button on, give the body tag of the html document an ID name from the rules below. You should not need to modify these rules unless you go over 10 nav items */
+body#oneon #menu ul li#one a, body#twoon #menu ul li#two a, body#threeon #menu ul li#three a, body#fouron #menu ul li#four a, body#fiveon #menu ul li#five a, body#sixon #menu ul li#six a, body#sevenon #menu ul li#seven a, body#eighton #menu ul li#eight a, body#nineon #menu ul li#nine a, body#tenon #menu ul li#ten a {
+	background: #006699;
+	border-top:2px solid #005985;
+}
+/* END Body Switcher for ON states for each section */
+/* END Main Nav */
+
+#banner {
+	display:block;
+	height:105px;
+	overflow:hidden;
+	width:547px;
+}
+
+#banner_title {
+	color:#FFFFFF;
+	font-family:arial,helvetica;
+	font-size:18px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:5px;
+}
+
+#headimage {
+	clear:both;
+	padding-top:3px;
+}
+
+#headimage img {
+	display:block;
+}
+
+#headimage h1 {
+	display:none;
+}
+
+/* Main Nav 2 */
+#menu2 {
+	border:0;
+	margin:0;
+	padding:0;
+	height:25px;
+	width:730px;
+	color:#fff;
+	background:#666;
+}
+
+#menu2 ul {
+	border:0;
+	margin:0;
+	padding:0;
+	height:25px;
+	width:730px;
+	list-style-type:none;
+	text-align:center;
+	clear:left;
+	color:#fff;
+}
+
+#menu2 ul li {
+	display:block;
+	float:left;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+#menu2 ul li a {
+	text-decoration:none;
+	color:#fff;
+	width:181px;
+	height:23px;
+	border-top:2px solid #525252;
+	border-right:1px solid #fff;
+	padding:0;
+	display:block;
+	text-align:center;
+	line-height:23px;
+	font:12px/23px Arial, Helvetica, sans-serif;
+	font-weight:700;
+	letter-spacing:-.0px;
+}
+
+#menu2 ul li a:hover {
+	height:23px;
+	color:#fff;
+	border-top:2px solid #005985;
+	background:#006699;
+}
+
+#menu2 ul li#oneb a { width:191px;}
+#menu2 ul li#twob a { width:201px;}
+#menu2 ul li#threeb a { width:152px;}
+#menu2 ul li#fourb a { border-right:0; width:183px;}
+
+/* BODY SWITCHER for ON states for each button. To turn a button on, give the body tag of the html document an ID name from the rules below. You should not need to modify these rules unless you go over 10 nav items */
+body#onebon #menu2 ul li#oneb a, body#twobon #menu2 ul li#twob a, body#threebon #menu2 ul li#threeb a, body#fourbon #menu2 ul li#fourb a, body#fivebon #menu2 ul li#fiveb a, body#sixbon #menu2 ul li#sixb a, body#sevenbon #menu2 ul li#sevenb a, body#eightbon #menu2 ul li#eightb a, body#ninebon #menu2 ul li#nineb a, body#tenbon #menu2 ul li#tenb a {
+	background: #006699;
+	border-top:2px solid #005985;
+}
+/* END Body Switcher for ON states for each section */
+/* END Main Nav */
+
+/* CONTENT LAYOUT A DESCRIPTIONS */
+#contentwrapper {
+	position:relative;
+	width:730px;
+	border-top:5px solid #fff;
+}
+
+/* Real NASA Banner */
+
+/* END Real NASA Banner */
+
+/* Right Content styles */
+#rightcontent {
+	position:relative;
+	float:right;
+	text-align:left;
+	width:547px;
+	min-height:500px;
+	margin:0px 0px 3px 0px;
+}
+
+#rightcontent p, #singlecolumn p, {
+	margin:0px 15px 15px 0px;
+}
+
+#rightcontent p.bigtext, #singlecolumn p.bigtext {
+	font-size:16px;
+	line-height:20px;
+	font-weight:bold;
+	margin:15px 40px 15px 0px;
+	color:#006699;
+	text-align:left;
+	letter-spacing:-.2px;
+}
+
+#rightcontent h1, #singlecolumn h1 {
+	border-bottom:1px solid #ccc;
+	color:#006699;
+	margin:0 15px 10px 0px;
+	padding-top:10px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#rightcontent h2, #singlecolumn h2 {
+	border-bottom:1px solid #ccc;
+	color:#006699;
+	margin:0 15px 10px 0px;
+	padding-top:10px;
+	font-size:12px;
+	font-weight:bold;
+	/* Blue Header with underline in main content */
+}
+
+#rightcontent h3.headertype2, #singlecolumn h3.headertype2 {
+	position:relative;
+	margin:0 0 10px 0px;
+	font-size:12px;
+	font-weight:bold;
+	/* Black Header with Date to the right for articles */
+}
+
+/* HIDE FROM MAC IE - All browsers but Mac IE5 will move the date to the right \*/
+#rightcontent h3.headertype2 span, #singlecolumn h3.headertype2 span {
+	position:absolute;
+	right:15px;
+}
+/* */
+
+#rightcontent h3, #singlecolumn h3, #rightcontent h4, #singlecolumn h4, #rightcontent h5, #singlecolumn h5, #rightcontent h6, #singlecolumn h6, #rightcontent h7, #singlecolumn h7, #rightcontent h8, #singlecolumn h8, #rightcontent h9, #singlecolumn h9, #rightcontent input, #singlecolumn input {
+	margin:0px 15px 0px 0px;
+}
+
+#rightcontent .flush, #singlecolumn .flush {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*
+#rightcontent img, #singlecolumn img {
+	margin:0 15px 2px 0px;
+	}
+*/
+
+#rightcontent table, #singlecolumn table {
+	margin-left:0px;
+}
+
+#rightcontent img.left, #singlecolumn img.left {
+	float:left;
+	margin:0 7px 5px 0px;
+}
+
+#rightcontent img.right, #singlecolumn img.right {
+	float:right;
+	margin:0 15px 5px 7px;
+}
+
+
+#rightcontent div.capleft, #singlecolumn div.capleft {
+	float:left;
+	width:250px;
+	margin:0 7px 5px 0px;
+}
+
+#rightcontent div.capleft p, #singlecolumn div.capleft p {
+	margin:5px 5px 0px 5px;
+	font-size:11px;
+	color:#999;
+}
+
+#rightcontent div.capleft img, #singlecolumn div.capleft img {
+	margin:0px;
+	padding:0px;
+}
+
+#rightcontent div.capright, #singlecolumn div.capright {
+	float:right;
+	width:250px;
+	margin:0 15px 5px 7px;
+}
+
+#rightcontent div.capright p, #singlecolumn div.capright p {
+	margin:5px 5px 0px 5px;
+	font-size:11px;
+	color:#999;
+}
+
+#rightcontent div.capright img,  #singlecolumn div.capright img {
+	margin:0px;
+	padding:0px;
+}
+
+#rightcontent div.twocol div.urone {
+	background:transparent;
+	float:left;
+	width:353px;
+	margin:0px 0px 0px 5px;
+	padding:0;
+	border-right:1px solid #BBBBBB;
+}
+
+#rightcontent div.twocol div.urtwo {
+	margin:0;
+	padding:0;
+	margin-left:374px;
+	/* width:178px */
+}
+
+#rightcontent div.twocol div.urone h1 {
+	margin:0px 0px 10px 0px;
+}
+
+#rightcontent div.twocol div.urtwo h1 {
+	margin:0px 15px 10px -15px;
+	padding-left:15px;
+}
+
+#rightcontent div.twocol div.urone h2 {
+	margin:0px 0px 10px 0px;
+}
+
+#rightcontent div.twocol div.urtwo h2 {
+	margin:0px 15px 10px -15px;
+	padding-left:15px;
+}
+
+#rightcontent div.twocol div.clear {
+	height:1px;
+}
+
+#rightcontent div.twocol div.urone table.datatab {
+	width:338px;
+}
+/* END Three Column Layout, These divs go WITHIN the RIGHT CONTENT div */
+/* END Right Content Styles */
+
+/* LEFT CONTENT STYLES */
+#leftcontent {
+	position:relative;
+	padding:0;
+	margin:0;
+	width:179px;
+	float:left;
+}
+
+#tisearch {
+	color:#666666;
+	padding:20px 10px;
+}
+
+#tisearch label {
+	font-weight: bold;
+}
+
+#leftcontent div.fact {
+	position:relative;
+	width:158px;
+	margin-left:10px;
+	padding:10px 0px 0px 0px;
+	border-bottom:1px solid #ccc;
+}
+
+#leftcontent div.fact h3 {
+	padding:0px 0px 3px 10px;
+	border-bottom:1px solid #ccc;
+	color:#006699;
+	margin:0px 0px 10px 0px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#leftcontent div.fact p {
+	text-align:left;
+	padding:0px 10px 10px 10px;
+	color:#006699;
+	font-size:13px;
+	line-height:16px;
+	margin:0;
+}
+
+#contentwrapper #leftcontent ul.facta li {
+	margin-top:10px;
+}
+#contentwrapper #leftcontent ul.facta li a {
+	color:#006699;
+	font-size:11px;
+}
+
+#leftcontent h3 {
+	margin:0px 10px 0px 20px;
+}
+
+/* Left NAV Descriptions */
+div#leftnav {
+	z-index:10;
+	width:179px;
+	margin:0px 0px 15px 0px;
+	color:#FFF;
+}
+
+div#leftnav ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+div#leftnav ul li a {
+	display:block;
+	font-weight:bold;
+	padding:5px 5px 5px 24px;
+	text-decoration:none;
+	width:150px;
+	color:#FFF;
+}
+
+.sNavItem {
+	margin:1px 0px;
+	padding:0px 10px;
+	/* height:26px;
+	   droping this attribute so that menu items with multiple lines
+	   dont drop below the menu item background
+	*/
+	display:block;
+	line-height:26px;
+	background-color: #CCC;
+	color:#333;
+}
+
+.sNavItem:hover {
+	background-color: #666;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.subNav {
+	background-color:#C5D5EC;
+	padding:2px;
+}
+
+.subNav a {
+	display:block;
+	line-height:14px;
+	margin:2px 0px;
+	padding:0px 5px;
+}
+
+.currentLoc {
+	background-color:#006699;
+	color:#FFF;
+}
+
+div#lefttitle {
+	position:relative;
+	width:179px;
+	color:#fff;
+	background:#006699;
+	padding:10px 0px 0px 0px;
+	margin:0;
+}
+
+div#lefttitle p.homeabs {
+	position:absolute;
+	top:10px;
+	left:22px;
+	color:#fff;
+	text-decoration:none;
+}
+
+div#lefttitle p.crumb {
+	padding:0px 0px 0px 15px;
+	margin:0px;
+	width:160px;
+	clear:both;
+	color:#FFF;
+}
+
+.plus {
+	display:block;
+	float:left;
+	margin:2px 0px;
+	width:10px;
+}
+
+
+div#lefttitle a.breadCrumb {
+	color:#FFFFFF;
+	float:left;
+	font-size:11px;
+	margin:2px 0px;
+	width:125px;
+}
+
+div#lefttitle a.homeabs {
+	position:absolute;
+	top:10px;
+	left:22px;
+	color:#fff;
+	text-decoration:none;
+}
+
+div#lefttitle a.homeabs:hover {
+	text-decoration:underline;
+}
+
+div#lefttitle h2 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin:0;
+	width:150px;
+	color:#fff;
+	font-weight:bold;
+	font-size:16px;
+	padding:0px 5px 10px 10px;
+	border-bottom:1px solid #fff;
+}
+#here {
+	clear:both;
+	color:#FFFFFF;
+	font-size:18px;
+	line-height:19px;
+	margin:0px;
+	padding:30px 5px 15px;
+}
+
+
+div#lefttitle h2 a {
+	color:#fff;
+	text-decoration:none;
+}
+
+div#lefttitle h2 a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+
+/* BODY SWITCHER for ON states for the LEFT NAV.  To turn a button on, give the body tag of the html document a CLASS name from the rules below. */
+body.lnoneon div#leftnav li#lnone a {
+	color:#fff;
+}
+
+body.lnoneon div#lefttitle h2 {
+	margin:0 0 0 24px;
+	color:#fff;
+	font-weight:bold;
+	font-size:16px;
+	padding:0px 5px 10px 0px;
+	border-bottom:1px solid #fff;
+}
+
+body.lntwoon div#leftnav li#lntwo a, body.lnthreeon div#leftnav li#lnthree a, body.lnfouron div#leftnav li#lnfour a, body.lnfiveon div#leftnav li#lnfive a, body.lnsixon div#leftnav li#lnsix a, body.lnsevenon div#leftnav li#lnseven a, body.lneighton div#leftnav li#lneight a, body.lnnineon div#leftnav li#lnnine a, body.lntenon div#leftnav li#lnten a, body.lnelevenon div#leftnav li#lneleven a, body.lntwelveon div#leftnav li#lntwelve a, body.lnthirteenon div#leftnav li#lnthirteen a, body.lnfourteenon div#leftnav li#lnfourteen a, body.lnfifteenon div#leftnav li#lnfifteen a {
+	color:#fff;
+}
+/* END Body Switcher for ON states for the LEFT NAV. */
+/* END left NAV */
+
+#leftcontent p, pre, blockquote {
+	margin:0px 30px 30px;
+}
+
+
+#leftcontent ul.linklist {
+	margin:0px 10px 15px 18px;
+}
+
+#leftcontent ul.linklist li {
+	margin-bottom:3px;
+}
+
+#leftcontent ul.linklist li a {
+	color:#000;
+	font-size:11px;
+	line-height:14px
+}
+
+#leftcontent h2 {
+	border-bottom:1px solid #ccc;
+	color:#006699;
+	margin:0px 5px 10px 0px;
+	padding:10px 5px 0px 0px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#leftcontent h3 {
+	color:#000;
+	margin:0px 10px 10px 20px;
+	font-size:12px;
+	font-weight:bold;
+}
+/* END LEFT CONTENT STYLES */
+/* END CONTENT LAYOUT A DESCRIPTIONS */
+
+/* CONTENT LISTS. For several different lists and feature sets */
+
+/* Smaller Image list 64X48, Image floats left with content to the right of it */
+#rightcontent div.smfeature {
+	position:relative;
+	margin:0px 0px 0px 0px;
+	padding:0;
+}
+
+#rightcontent div.smfeature div.theimg {
+	float:left;
+	margin:0;
+	padding:0px 0px 15px 0px;
+	width:64px;
+}
+
+#rightcontent div.smfeature div.theimg img {
+	margin:0;
+	padding:0;
+}
+
+#rightcontent div.smfeature dl {
+	padding:0px 0px 15px 0px;
+	margin:0px 15px 0px 74px;
+}
+
+#rightcontent div.smfeature dt {
+	padding:0;
+	margin:0;
+	font-weight:bold;
+}
+
+#rightcontent div.smfeature dd {
+	padding:0;
+	margin:0;
+}
+
+#rightcontent div.smfeature dd a {
+	display:inline;
+}
+/* END Smaller Image list 64X48 */
+
+/* Larger Image List 100X75, Image floats left with content to the right of it */
+#rightcontent div.lgfeature {
+	position:relative;
+	margin:0;
+	padding:0;
+}
+
+#rightcontent div.lgfeature div.theimg {
+	float:left;
+	margin:0;
+	padding:0px 0px 15px 0px;
+	width:100px;
+}
+
+#rightcontent div.lgfeature div.theimg img {
+	margin:0;
+	padding:0;
+}
+
+#rightcontent div.lgfeature dl {
+	padding:0px 0px 15px 0px;
+	margin:0px 15px 0px 110px;
+}
+
+#rightcontent div.lgfeature dt {
+	padding:0;
+	margin:0;
+	font-weight:bold;
+}
+
+#rightcontent div.lgfeature dd {
+	padding:0;
+	margin:0;
+}
+
+#rightcontent div.lgfeature dd a {
+	display:inline;
+}
+/* END Larger Image List 100X75 */
+
+/* All other definition Lists */
+#rightcontent dl {
+	position:relative;
+	margin:0px 0px 10px 0px;
+	padding:0;
+}
+
+#rightcontent dl dt a {
+	text-decoration:none;
+	color:#000;
+}
+
+#rightcontent dl dt a:hover {
+	text-decoration:none;
+	color:#000;
+}
+
+#rightcontent dl dt {
+	margin:0px 15px 0px 0px;
+	padding:0;
+	font-weight:bold;
+}
+
+#rightcontent dl dd {
+	margin:0px 15px 0px 0px;
+	padding:0;
+}
+
+/* BEGIN Link List - Unordered List with the + sign in front of the links */
+ul.linklist {
+	position:relative;
+	margin:0px 0px 10px 0px;
+	list-style-type:none;
+	padding:0;
+}
+
+ul.linklist li a {
+	padding-left:9px;
+	font-size:11px;
+}
+
+ul.linklist li a:hover {
+	text-decoration:underline;
+}
+
+dd ul.linklist li {
+	margin:0px;
+}
+/* End Link List - Unordered list */
+/* END CONTENT LISTS */
+
+/* EXAMPLES, INDENTS, CODE ECT */
+div.example {
+	margin-bottom:15px;
+	margin-left:25px;
+}
+
+div#rightcontent div.example h3 {
+	margin-bottom:5px;
+}
+/* END EXAMPLES, INDENTS, CODE ECT */
+
+/* GALLERY */
+div#gallery {
+	margin:15px 0px;
+}
+
+div#gallery img {
+	margin:0px 15px 5px 0px;
+	float:left;
+	width:100px;
+	height:75px;
+}
+/* END GALLERY */
+
+/* Common Footer */
+#nasafoot {
+	position:relative;
+	background:#ccc;
+	width:730px;
+	height:90px;
+	clear:both;
+	margin-top:3px;
+}
+
+#nasafoot img {
+	display:inline;
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+#nasafootr {
+	position:absolute;
+	left:470px;
+	top:3px;
+}
+
+#nasafootplus {
+	/*color:#666;*/
+	font-size:11px;
+	width:300px;
+	float:left;
+}
+#nasafootleft {
+	float:left;
+}
+
+#nasafootplus ul {
+	list-style:none;
+	padding:10px 0px 0px 10px;
+	margin:0px;
+}
+
+#nasafootplus ul li {
+	padding-bottom:0;
+}
+
+#nasafootplus ul li a:link, #nasafootplus ul li a:visited {
+	text-decoration:none;
+	font-weight:normal;
+	/*color:#666;*/
+	font-size:11px;
+}
+
+#nasafootplus ul li a:hover {
+	text-decoration:underline;
+}
+
+#nasafootlinks {
+	position:absolute;
+	left:500px;
+	top:5px;
+	color:#666;
+	font-size:11px;
+}
+
+#nasafootlinks ul {
+	list-style:none;
+}
+
+#nasafootlinks ul li {
+	padding-bottom:0;
+}
+
+#nasafootlinks ul li a:link, #nasafootlinks ul li a:visited {
+	text-decoration:none;
+	font-weight:normal;
+	color:#666;
+	font-size:11px;
+}
+
+#nasafootlinks ul li a:hover {
+	text-decoration:underline;
+}
+
+/* TIWEB */
+
+.ctr-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.errorlist {
+	color: #900;
+}
+
+.pub_entry {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #CCC;
+}
+
+table.generic {
+	border-width: 0px 0px 1px 1px;
+	border-spacing: 0px;
+	border-style: solid solid solid solid;
+	border-color: black black black black;
+	border-collapse: separate;
+	background-color: white;
+}
+table.generic th {
+	border-width: 1px 1px 0px 0px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: black black black black;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.generic td {
+	border-width: 1px 1px 0px 0px;
+	padding: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: black black black black;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
+.scrollbox {
+	color:#000000;
+	width:169px;
+	height:300px;
+	padding-left:5px;
+	padding-right:5px;
+	overflow:auto;
+}
+
+/* PUT ALL OF YOUR CHANGES BELOW THIS LINE. FOR EXAMPLE, TO MODIFY THE SIZES OF THE MENU, COPY THEM FROM ABOVE AND PLACE THEM BELOW. Remember, these values OVERRIDE the values from above so it is ok to leave them there. */

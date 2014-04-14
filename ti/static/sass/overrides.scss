@@ -1,0 +1,110 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/css3/border-radius";
+@import "compass/css3/columns";
+@import "compass/css3/opacity";
+@import "compass/utilities";
+
+// Vars
+$colorKey: #53B4FF;
+$colorNasaKey: #006699;
+$cr: 4px;
+
+a {
+	cursor: pointer;
+}
+
+//body {
+//	background: #004400;
+//}
+
+p {
+	//clear: both;
+}
+
+.link {
+	display: block;
+	font-weight: bold;
+}
+
+.link:before {
+	content: '+ ';
+}
+
+
+a.button {
+	$c: $colorNasaKey;
+	@include background-image(linear-gradient(lighten($c, 10%) $c));
+	@include border-radius($cr);
+//	@include box-shadow(rgba(black, 0.5) 0 0px 10px);
+	@include text-shadow(rgba(black, 0.5) 0 1px 3px);
+	color: #fff;
+	display: block;
+	font-size: 1.2em;
+	line-size: 1.2em;
+	padding: 7px 10px;
+	text-align: center;
+	text-decoration: none;
+	&:hover {
+		@include background-image(linear-gradient(lighten($c, 20%) lighten($c, 10%)));
+	}
+}
+
+.banner-ov {
+	$h: 20px;
+	$p: 5px;
+	background: rgba(black, 0.5);
+	height: $h;
+	line-height: $h;
+	margin-left: -5px;
+	margin-top: ((2 * $p) + $h) * -1;
+	padding: $p $p * 2;
+	position: absolute;
+	width: 527px;
+	z-index: 10;
+	&.label {
+		color: #ccc;
+	}
+}
+
+.centered {
+	text-align: center;
+}
+
+.float-l {
+	float: left;
+	margin-right: 10px;
+}
+
+.float-r {
+	float: right;
+	margin-left: 10px;
+}
+
+.label {
+	font-style: italic;
+}
+
+.sm {
+	font-size: 0.9em;
+}
+
+.thumbs {
+	h3 {
+		clear: both;
+		margin-top: 20px;
+	}
+	p {
+		@include clearfix;
+		position: relative;
+	}
+	.thumb {
+		width: 125px; height: 125px; // height is temp
+	}
+}
+
+.urone {
+	p {
+		padding-right: 10px;
+	}
+}
