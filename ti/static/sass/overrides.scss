@@ -9,6 +9,8 @@
 $colorKey: #53B4FF;
 $colorNasaKey: #006699;
 $cr: 4px;
+$imagesUrl: "../images/";
+$spritesLgUrl: $imagesUrl + "openmct-sprites-lg-ti.png";
 
 a {
 	cursor: pointer;
@@ -81,6 +83,14 @@ a.button {
 	margin-left: 10px;
 }
 
+.graphic {
+  background: url($spritesLgUrl) no-repeat 0 0;
+  &.users { background-position: 0 -125px; }
+  &.composers { background-position: 0 -625px; }
+  &.contributors { background-position: 0 -750px; }
+  &.professionals { background-position: 0 -500px; }
+}
+
 .label {
 	font-style: italic;
 }
@@ -90,7 +100,8 @@ a.button {
 }
 
 .thumbs {
-	h3 {
+	h2,
+    h3 {
 		clear: both;
 		margin-top: 20px;
 	}
