@@ -16,14 +16,6 @@ a {
 	cursor: pointer;
 }
 
-//body {
-//	background: #004400;
-//}
-
-p {
-	//clear: both;
-}
-
 .link {
 	display: block;
 	font-weight: bold;
@@ -95,6 +87,14 @@ a.button {
 	font-style: italic;
 }
 
+.logo.openmct {
+	background: url($spritesLgUrl) no-repeat 0 0;
+//	border:1px dashed orange;
+	position: absolute;
+	top: 5px; left: 5px;
+	height: 70px; width: 250px;
+}
+
 .sm {
 	font-size: 0.9em;
 }
@@ -109,8 +109,14 @@ a.button {
 		@include clearfix;
 		position: relative;
 	}
-	.thumb {
-		width: 125px; height: 125px; // height is temp
+}
+
+
+.thumb {
+	width: 125px; height: 125px; // height is temp
+	&.lg {
+		display: block;
+		width: 340px; height: auto;
 	}
 }
 

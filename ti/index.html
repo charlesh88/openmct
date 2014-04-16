@@ -19,6 +19,15 @@
 
 
 	<script type="text/javascript" src="./OpenMCT_files/dynUtil.js"> </script>
+	<script type="text/javascript" src="./static/js/scripts.js"> </script>
+	<script type="text/javascript" src='./static/js/jquery-1.11.0.min.js'></script>
+	<script>
+		$(function() {
+			loadHtml('#leftnav','static/fragments/_nav.html');
+			loadHtml('.urone','static/fragments/_home.html');
+			loadHtml('.urtwo','static/fragments/_sidebar.html');
+		});
+	</script>
 	
 	
  </head>
@@ -60,52 +69,10 @@
 
 		 <div class="twocol">
 			 <div class="urone">
-				 <style>
-				 </style>
-
-				 <div class="banner-ov label">Launched in 2013, the IRIS mission uses Open MCT.</div>
-
-				 <h1>Mission Control Technologies &ndash; Open Sourced</h1>
-				 <p>
-					 Control centers for space missions are tasked with operating spacecraft. While the specific tasks may vary with each mission, the basic roles - monitoring spacecraft health and status, sending commands to carry out mission goals, monitoring activities, knowing where the spacecraft is relative to its planetary or deep space objective - are similar across missions. Traditionally, software for conducting space mission operations is built using traditional application architectures, using a suite of different applications. Open MCT changes that paradigm completely.
-				 </p>
-
-				 <h2>What is Open MCT?</h2>
-				 <p><img src="http://ufoseries.com/publicity/thumb/shado_hq_operative.jpg" style="display: none; float: right; margin-left: 10px; height: 75px;" />
-					 Developed to support situational awareness for space missions, Open MCT eliminates the walls associated with traditional software by replacing applications with compositions. Users are provided with an integrated environment of pre-built software objects from which software may be assembled by putting the building blocks together. It’s a simple as drag and drop.
-					 <a href='https://ti.arc.nasa.gov/dev/openmct/whatis/' class='link'>Learn More</a></p>
-
-				 <h2>Get Involved</h2>
-				 <p>
-					 You can be part of the Open MCT community. Choose your level of engagement: as a user, simply download the demo and give it a try, visualize missions using pre-built displays. As a composer, you can build your own displays from pre-built parts. As a contributor, you can contribute code, designs and ideas.
-					 <a href='https://ti.arc.nasa.gov/dev/openmct/getinvolved/' class='link'>Learn More</a></p>
-
-				 <h2>Downloads</h2>
-				 <p>
-					 Get more information on downloading and installing the Open MCT demo and getting access to the source code. The demo is the easiest way to give Open MCT a try - just download and install and you’re up and running. You can view mission-like displays, or build your own using the pre-built software objects and track some spacecraft. Want to go deeper? Find out about how to access our GitHub repository for access to the source code.
-					 <a href='https://ti.arc.nasa.gov/dev/openmct/downloads/' class='link'>Learn More</a></p>
-
-				 <h2>Events and Missions</h2>
-				 <p>
-					 Dis pid parturient lorem scelerisque, massa in vel pulvinar, tristique, diam, tincidunt lundium tincidunt, et, scelerisque porta? Odio augue nunc! Urna. Ultricies! Ultrices diam sed, tincidunt lectus in ac, rhoncus a, placerat phasellus in? Et, adipiscing  Sed, ac cursus! Urna nascetur..
-					 <a href='https://ti.arc.nasa.gov/dev/openmct/events/' class='link'>Learn More</a></p>
-
-
-
-
 
 			 </div>
 			 <div class="urtwo">
-				<h1>Try Open MCT</h1>
-				<p>
-				<img src="./OpenMCT_files/m/site/images/laptop-mct-plot.jpg" alt="Laptop with Open MCT Software" class="img" />
-				</p>
-				<p>
-				Download, install and you're up and running. View mission-like displays, or build your own using the pre-built software objects. Track satellites, spacecraft and more.
-				</p>
 
-				 <p><a href="" class="button">Download the Demo</a></p>
-				 <p class="sm centered"><a href="">View all downloads</a></p>
 			 </div>
 			 <div class="clear"></div>
 		 </div>
@@ -131,26 +98,6 @@
 			</div>
 
 			<div id="leftnav">
-
-
-				<a href="/dev/openmct/" class="sNavItem currentLoc">+ Home</a>
-
-
-				<a href="/dev/openmct/whatis/" class="sNavItem">+ What Is Open MCT?</a>
-
-
-				<a href="/dev/openmct/getinvolved/" class="sNavItem">+ Get Involved</a>
-
-
-				<a href="/dev/openmct/downloads/" class="sNavItem">+ Downloads</a>
-
-
-				<a href="/dev/openmct/documentation/" class="sNavItem">+ Documentation</a>
-
-
-				<a href="/dev/openmct/events/" class="sNavItem">+ Events and Missions</a>
-
-
 
 			</div>
 			<!-- END Left Nav -->
