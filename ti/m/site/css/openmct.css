@@ -1,17 +1,13 @@
-/* line 15, ../../../static/sass/overrides.scss */
 a {
   cursor: pointer; }
 
-/* line 19, ../../../static/sass/overrides.scss */
 .link {
   display: block;
   font-weight: bold; }
 
-/* line 24, ../../../static/sass/overrides.scss */
 .link:before {
   content: '+ '; }
 
-/* line 29, ../../../static/sass/overrides.scss */
 a.button {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0088cc), color-stop(100%, #006699));
   background-image: -webkit-linear-gradient(#0088cc, #006699);
@@ -31,7 +27,6 @@ a.button {
   padding: 7px 10px;
   text-align: center;
   text-decoration: none; }
-  /* line 42, ../../../static/sass/overrides.scss */
   a.button:hover {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00aaff), color-stop(100%, #0088cc));
     background-image: -webkit-linear-gradient(#00aaff, #0088cc);
@@ -39,7 +34,6 @@ a.button {
     background-image: -o-linear-gradient(#00aaff, #0088cc);
     background-image: linear-gradient(#00aaff, #0088cc); }
 
-/* line 47, ../../../static/sass/overrides.scss */
 .banner-ov {
   background: rgba(0, 0, 0, 0.5);
   height: 20px;
@@ -50,45 +44,34 @@ a.button {
   position: absolute;
   width: 527px;
   z-index: 10; }
-  /* line 59, ../../../static/sass/overrides.scss */
   .banner-ov.label {
     color: #ccc; }
 
-/* line 64, ../../../static/sass/overrides.scss */
 .centered {
   text-align: center; }
 
-/* line 68, ../../../static/sass/overrides.scss */
 .float-l {
   float: left;
   margin-right: 10px; }
 
-/* line 73, ../../../static/sass/overrides.scss */
 .float-r {
   float: right;
   margin-left: 10px; }
 
-/* line 78, ../../../static/sass/overrides.scss */
 .graphic {
   background: url("../img/mct/openmct-sprites-lg-ti.png") no-repeat 0 0; }
-  /* line 80, ../../../static/sass/overrides.scss */
   .graphic.users {
     background-position: 0 -125px; }
-  /* line 81, ../../../static/sass/overrides.scss */
   .graphic.composers {
     background-position: 0 -625px; }
-  /* line 82, ../../../static/sass/overrides.scss */
   .graphic.contributors {
     background-position: 0 -750px; }
-  /* line 83, ../../../static/sass/overrides.scss */
   .graphic.professionals {
     background-position: 0 -500px; }
 
-/* line 86, ../../../static/sass/overrides.scss */
 .label {
   font-style: italic; }
 
-/* line 90, ../../../static/sass/overrides.scss */
 .logo.openmct {
   background: url("../img/mct/openmct-sprites-lg-ti.png") no-repeat 0 0;
   position: absolute;
@@ -97,31 +80,25 @@ a.button {
   height: 70px;
   width: 250px; }
 
-/* line 98, ../../../static/sass/overrides.scss */
 .sm {
   font-size: 0.9em; }
 
-/* line 104, ../../../static/sass/overrides.scss */
 .thumbs h2,
 .thumbs h3 {
   clear: both;
   margin-top: 20px; }
-/* line 108, ../../../static/sass/overrides.scss */
 .thumbs p {
   overflow: hidden;
   *zoom: 1;
   position: relative; }
 
-/* line 115, ../../../static/sass/overrides.scss */
 .thumb {
   width: 125px;
   height: 125px; }
-  /* line 117, ../../../static/sass/overrides.scss */
   .thumb.lg {
     display: block;
     width: 340px;
     height: auto; }
 
-/* line 124, ../../../static/sass/overrides.scss */
 .urone p {
   padding-right: 10px; }
